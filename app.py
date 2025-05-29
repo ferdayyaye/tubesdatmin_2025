@@ -265,14 +265,14 @@ with tabs[5]:
         col1, col2 = st.columns(2)
         with col1:
             Pregnancies = st.number_input("Jumlah Kehamilan", 0, 20, 1)
-            Glucose = st.number_input("Glukosa", 0, 200, 120)
-            BloodPressure = st.number_input("Tekanan Darah", 0, 140, 70)
-            SkinThickness = st.number_input("Ketebalan Kulit", 0, 100, 20)
+            Glucose = st.number_input("Glukosa (mg/dL)", 0, 200, 120)
+            BloodPressure = st.number_input("Tekanan Darah (mm Hg)", 0, 140, 70)
+            SkinThickness = st.number_input("Ketebalan Kulit (mm)", 0, 100, 20)
         with col2:
-            Insulin = st.number_input("Insulin", 0, 600, 80)
-            BMI = st.number_input("BMI", 0.0, 60.0, 25.0)
-            DiabetesPedigreeFunction = st.number_input("DPF", 0.0, 3.0, 0.5)
-            Age = st.number_input("Umur", 0, 120, 33)
+            Insulin = st.number_input("Insulin (mu U/ml)", 0, 600, 80)
+            BMI = st.number_input("BMI (kg/m²)", 0.0, 60.0, 25.0)
+            DiabetesPedigreeFunction = st.number_input("Diabetes Pedigree Function", 0.0, 3.0, 0.5)
+            Age = st.number_input("Usia (tahun)", 0, 120, 33)
 
         submitted = st.form_submit_button("🔍 Prediksi Risiko Diabetes")
 
